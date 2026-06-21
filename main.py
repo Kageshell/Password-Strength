@@ -84,6 +84,7 @@ passwordA = "hello123"
 passwordB = "I1mK.ng2"
 passwordC = "12345678"
 passwordD = "2qT$S~bIP6_2"
+passwordE = "MAmaD0uSakirig@na"
 attemps_per_sec = 10**9
 
 print("Number of possibilities :")
@@ -92,6 +93,7 @@ print(passwordA,"-->",complexite(passwordA),"possibilities")
 print(passwordB,"-->",complexite(passwordB),"possibilities")
 print(passwordC,"-->",complexite(passwordC),"possibilities")
 print(passwordD,"-->",complexite(passwordD),"possibilities")
+print(passwordE,"-->",complexite(passwordE),"possibilities")
 
 print("")
 print("Entropy (H = log2(N^L)) :")
@@ -100,6 +102,7 @@ print(entropie(passwordA))
 print(entropie(passwordB))
 print(entropie(passwordC))
 print(entropie(passwordD))
+print(entropie(passwordE))
 
 print("")
 print("Time to crack password :")
@@ -107,3 +110,4 @@ print(time_to_crack(passwordA, attemps_per_sec))
 print(time_to_crack(passwordB, attemps_per_sec))
 print(time_to_crack(passwordC, attemps_per_sec))
 print(time_to_crack(passwordD, attemps_per_sec))
+print(time_to_crack(passwordE, attemps_per_sec))
